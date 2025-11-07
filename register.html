@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PulseFit Studio — Register for Trial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- NAV -->
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #CDE8C9;" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <i class="bi bi-heart-pulse-fill fs-3 text-primary me-2" aria-hidden="true"></i>
+      <span class="fw-bold">PulseFit Studio</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+            aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navmenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Trial Class</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="container py-5">
+    <h1 class="h4">Register for a Free Trial Class</h1>
+    <p class="text-muted">Complete the form and we'll confirm your spot.</p>
+
+    <form id="trialForm" novalidate>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="fullName" class="form-label">Full name</label>
+          <input type="text" id="fullName" name="fullName" class="form-control" required aria-required="true">
+          <div class="invalid-feedback">Please enter your full name.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Mobile phone</label>
+          <input type="tel" id="phone" name="phone" class="form-control" required pattern="^[0-9+()\- ]{7,20}$">
+          <div class="invalid-feedback">Please enter a valid phone number.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" id="age" name="age" class="form-control" min="13" max="99" required>
+          <div class="invalid-feedback">Age must be between 13 and 99.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="classSelect" class="form-label">Preferred class</label>
+          <select id="classSelect" name="classSelect" class="form-select" required>
+            <option value="">Choose...</option>
+            <option>Yoga (Beginner)</option>
+            <option>Zumba (Evening)</option>
+            <option>HIIT (Morning)</option>
+            <option>Personal training — intro</option>
+          </select>
+          <div class="invalid-feedback">Please choose a class.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="notes" class="form-label">Notes (optional)</label>
+          <input type="text" id="notes" name="notes" class="form-control" placeholder="e.g., injuries, preferences">
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input id="consent" name="consent" type="checkbox" class="form-check-input" required>
+            <label class="form-check-label" for="consent">I confirm that the information above is correct and I agree to studio policies.</label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit registration</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <!-- Success modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Registration submitted</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you — your trial booking request has been received. We'll contact you shortly to confirm the time.
+        </div>
+        <div class="modal-footer">
+          <a href="schedule.html" class="btn btn-outline-secondary">View schedule</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+  <footer class="text-white py-3 bg-dark w-100 mt-auto">
+  <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
+    <div class="d-flex align-items-center mb-2 mb-lg-0">
+      <i class="bi bi-heart-pulse-fill text-primary fs-5 me-2"></i>
+      <span>© 2025 PulseFit Studio</span>
+    </div>
+    <div>
+        <a href="https://www.instagram.com/" class="text-white me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" class="text-white" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </footer
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PulseFit Studio — Trainers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <!-- NAV -->
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #CDE8C9;" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <i class="bi bi-heart-pulse-fill fs-3 text-primary me-2" aria-hidden="true"></i>
+      <span class="fw-bold">PulseFit Studio</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+            aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navmenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Trial Class</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="container py-5">
+    <h1 class="h4">Our Trainers</h1>
+    <p class="text-muted">Certified professionals ready to help you reach your goals.</p>
+
+    <!-- Carousel of featured trainers -->
+   <div id="trainerCarousel" class="carousel slide mb-5" data-bs-ride="carousel" aria-label="Featured trainers">
+  <div class="carousel-inner">
+
+    <!-- Sarah -->
+    <div class="carousel-item active">
+      <a href="trainers.html#sarah">
+        <img src="images/trainer1.PNG" class="d-block w-100 rounded" alt="Trainer A demonstrating workout">
+      </a>
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+        <h5>Sarah — Yoga & Mobility</h5>
+        <p class="mb-0">Focus on posture & breathing. RM 20 per hour</p>
+      </div>
+    </div>
+
+    <!-- Maya -->
+    <div class="carousel-item">
+      <a href="trainers.html#maya">
+        <img src="images/trainer2.PNG" class="d-block w-100 rounded" alt="Trainer C dancing">
+      </a>
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+        <h5>Maya — Zumba & Dance Fitness</h5>
+        <p class="mb-0">Fun-filled dance workouts that make fitness feel like a party! RM 15 per hour</p>
+      </div>
+    </div>
+	
+    <!-- Omar -->
+    <div class="carousel-item">
+      <a href="trainers.html#omar">
+        <img src="images/trainer3.PNG" class="d-block w-100 rounded" alt="Trainer B coaching a class">
+      </a>
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+        <h5>Omar — HIIT & Strength</h5>
+        <p class="mb-0">Strength coach with sports science background. RM 25 per hour</p>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#trainerCarousel" data-bs-slide="prev" aria-label="Previous trainer">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#trainerCarousel" data-bs-slide="next" aria-label="Next trainer">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+    <!-- Trainer cards -->
+    <div class="row g-4">
+      <!-- Trainer card example -->
+<main class="py-5" style="background-color:#E3F2FD;"> 
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Sarah (Yoga) -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm" style="background-color:#CDE8C9; transition: transform 0.3s;">
+          <img src="images/trainer1.PNG" class="card-img-top" alt="Sarah portrait">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sarah</h5>
+            <p class="card-text small">Yoga instructor • 5 years teaching</p>
+            <p class="card-text">Focus on mobility, beginner-friendly flows and breathwork.</p>
+          </div>
+          <div class="card-footer bg-transparent text-center">
+            <a href="register.html" class="btn btn-sm btn-primary" aria-label="Book Sarah">Book a trial</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maya (Zumba) -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm" style="background-color:#FFF3B0; transition: transform 0.3s;">
+          <img src="images/trainer2.PNG" class="card-img-top" alt="Maya portrait">
+          <div class="card-body text-center">
+            <h5 class="card-title">Maya</h5>
+            <p class="card-text small">Dance fitness • Zumba certified</p>
+            <p class="card-text">High energy classes that combine cardio & coordination.</p>
+          </div>
+          <div class="card-footer bg-transparent text-center">
+            <a href="register.html" class="btn btn-sm btn-primary">Book a trial</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Omar (Personal Training) -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm" style="background-color:#CDE8FF; transition: transform 0.3s;">
+          <img src="images/trainer3.PNG" class="card-img-top" alt="Omar portrait">
+          <div class="card-body text-center">
+            <h5 class="card-title">Omar</h5>
+            <p class="card-text small">Strength & conditioning coach • NASM</p>
+            <p class="card-text">Specialist in progressive strength training and technique coaching.</p>
+          </div>
+          <div class="card-footer bg-transparent text-center">
+            <a href="register.html" class="btn btn-sm btn-primary">Book a trial</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="text-white py-3 bg-dark w-100 mt-auto">
+  <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
+    <div class="d-flex align-items-center mb-2 mb-lg-0">
+      <i class="bi bi-heart-pulse-fill text-primary fs-5 me-2"></i>
+      <span>© 2025 PulseFit Studio</span>
+    </div>
+    <div>
+        <a href="https://www.instagram.com/" class="text-white me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" class="text-white" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </footer
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

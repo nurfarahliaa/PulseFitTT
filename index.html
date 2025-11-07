@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PulseFit Studio — Home</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font (open license) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <!-- NAV -->
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #CDE8C9;" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <i class="bi bi-heart-pulse-fill fs-3 text-primary me-2" aria-hidden="true"></i>
+      <span class="fw-bold">PulseFit Studio</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+            aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navmenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Trial Class</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- HERO -->
+<header class="py-5" style="background-color: #B3E5FC;">
+  <div class="container d-md-flex align-items-center gap-4">
+    <div class="flex-grow-1">
+      <h1 class="display-6 fw-bold text-dark">Get stronger. Move better. Feel great.</h1>
+      <p class="lead text-dark">
+        PulseFit Studio: yoga, zumba, HIIT and personal training in a friendly, supportive space.
+      </p>
+      <a href="register.html" class="btn btn-primary btn-lg me-2">Book a free trial</a>
+      <a href="schedule.html" class="btn btn-outline-dark btn-lg">See schedule</a>
+    </div>
+
+    <div aria-hidden="true" class="hero-image mt-4 mt-md-0">
+      <img src="assets/images/hero-sample.jpg" alt="" class="img-fluid rounded shadow" />
+    </div>
+  </div>
+</header>
+
+  <!-- Programs -->
+  <!-- Programs -->
+<section class="container py-5">
+  <h2 class="h4 fw-semibold">Our Programs</h2>
+  <p class="text-muted">Choose a program that fits your goals — from group classes to 1-on-1 coaching.</p>
+
+  <!-- Tambah baris grid -->
+  <div class="row g-4"> <!-- g-4 = jarak antara kad -->
+    
+    <section class="container my-5" id="trainers">
+  <h2 class="text-center mb-4">Our Programs</h2>
+  <div class="row g-4">
+    
+    <div class="col-md-4">
+      <div class="card yoga-card h-100">
+        <a href="trainers.html">
+          <img src="images/yoga.png" class="img-fluid rounded" alt="Yoga class">
+        </a>
+        <div class="card-body">
+          <h3 class="h5">Yoga</h3>
+          <p class="small text-muted">Gentle & dynamic classes to increase mobility, reduce stress, and improve posture.</p>
+          <p><span class="badge bg-light text-dark">Beginner-friendly</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card zumba-card h-100">
+        <a href="trainers.html">
+          <img src="images/zumba.png" class="img-fluid rounded" alt="Zumba Dance Class">
+        </a>
+        <div class="card-body">
+          <h3 class="h5">Zumba</h3>
+          <p class="small text-muted">High-energy dance fitness to boost cardio and have fun.</p>
+          <p><span class="badge bg-light text-dark">Group sessions</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card pt-card h-100">
+        <a href="trainers.html">
+          <img src="images/personal-training.png" class="img-fluid rounded" alt="Personal Training Session">
+        </a>
+        <div class="card-body">
+          <h3 class="h5">Personal Training</h3>
+          <p class="small text-muted">Tailored training plans and technique coaching with our certified trainers.</p>
+          <p><span class="badge bg-light text-dark">1-on-1</span></p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /row -->
+</section>
+
+  <!-- Highlight Trainers -->
+  <section class="py-4 border-top" style="background-color: #B3E5FC;">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <h3 class="h6 mb-0 text-dark">Meet our trainers</h3>
+      <p class="small mb-0 text-dark">Professional, certified and friendly.</p>
+    </div>
+    <a href="trainers.html" class="btn btn-outline-dark">View profiles</a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-white py-3 bg-dark w-100 mt-auto">
+  <div class="d-flex flex-wrap justify-content-between align-items-center px-4">
+    <div class="d-flex align-items-center mb-2 mb-lg-0">
+      <i class="bi bi-heart-pulse-fill text-primary fs-5 me-2"></i>
+      <span>© 2025 PulseFit Studio</span>
+    </div>
+    <div>
+        <a href="https://www.instagram.com/" class="text-white me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" class="text-white" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </footer
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

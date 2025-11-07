@@ -1,0 +1,155 @@
+:root {
+  --brand: #0d6efd;
+  --bg: #001f3f; 
+  --muted: #6c757d;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: light;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: inherit;
+  background-color: var(--bg);
+  color: #f8f9fa; 
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Warna kategori */
+.yoga {
+  background-color: #CDE8C9; 
+  color: #2e3b2e;
+  font-weight: 600;
+}
+
+.zumba {
+  background-color: #FFF3B0; 
+  color: #4b3e00;
+  font-weight: 600;
+}
+
+.hiit {
+  background-color: #FFD6A5; 
+  color: #5a2c00;
+  font-weight: 600;
+}
+
+.pt {
+  background-color: #A0C4FF; 
+  color: #002b5b;
+  font-weight: 600;
+}
+
+.opengym {
+  background-color: #FFADAD; 
+  color: #5a0000;
+  font-weight: 600;
+}
+
+/* Table style */
+table td, table th {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+/* Flex fill */
+main {
+  flex: 1;
+}
+
+/* Hero image */
+.hero-image img {
+  max-width: 420px;
+}
+
+/* Focus outline for accessibility */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 3px solid rgba(13,110,253,0.20);
+  outline-offset: 3px;
+}
+
+/* Cards on small screens */
+@media (max-width: 576px) {
+  .card .btn { width: 100%; }
+}
+
+/* Navbar logo */
+.navbar-brand img {
+  height: 28px;
+  margin-right: 6px;
+}
+
+/* Footer style */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #1e2226;
+  color: white;
+  width: 100%;
+  margin-top: auto;
+  padding: 15px 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: white;
+}
+
+footer a:hover {
+  color: #4da6ff;
+}
+section:last-of-type {
+  margin-bottom: 0;
+}
+/* Kad asas */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/* 1️ Yoga – pastel hijau */
+.yoga-card {
+  background-color: #CDE8C9;
+  color: #222; /* teks gelap */
+}
+
+/* 2️ Zumba – kuning lembut */
+.zumba-card {
+  background-color: #FFF3B0;
+  color: #000; /* teks hitam */
+}
+
+/* 3️ Personal Training – kelabu cerah */
+.pt-card {
+  background-color: #E8E8E8;
+  color: #000;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.yoga-card:hover { background-color: #bfe1bb; }
+.zumba-card:hover { background-color: #ffe985; }
+.pt-card:hover { background-color: #dcdcdc; }
+
+/* Carousel image resize */
+#trainerCarousel img {
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
