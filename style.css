@@ -132,7 +132,7 @@ section:last-of-type {
 
 /* 3️ Personal Training – kelabu cerah */
 .pt-card {
-  background-color: #E8E8E8;
+  background-color: #6FB2E3;
   color: #000;
 }
 
@@ -152,4 +152,5 @@ section:last-of-type {
   width: auto;
   object-fit: contain;
   margin: 0 auto;
+
 }
