@@ -152,6 +152,17 @@ section:last-of-type {
   width: auto;
   object-fit: contain;
   margin: 0 auto;
-
 }
+  .table-bordered, 
+  .table-bordered th, 
+  .table-bordered td {
+    border: 3px solid black !important; /* semua garisan sama tebal */
+  }
+
+  .table {
+    border-collapse: collapse !important; /* supaya border tak double */
+  }
+  
+
+
 
